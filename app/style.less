@@ -1,0 +1,541 @@
+//定义网站主色调
+@colro: #191d3a;
+@hover: #252847;
+@green: #38B774;
+@image: arrow;
+//网页版心
+.inner-c {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+//清楚默认的样式
+a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img, input, button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline-style: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+
+select, input {
+  vertical-align: middle;
+}
+
+select, input, textarea {
+  font-size: 12px;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+/*防止拖动*/
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+  border-collapse: collapse;
+}
+
+// 清除浮动
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1; /*IE/7/6*/
+}
+
+//=============== 以下组件部分===========================
+// head  组件
+#head {
+  width: 100%;
+  height: 58px;
+  background-color: @colro;
+  .alogo {
+    width: 206px;
+    margin-left: 18px;
+    height: 58px;
+    color: white;
+    line-height: 58px;
+    float: left;
+    img {
+      width: 134px;
+      height: 30px;
+      margin: 12px 0;
+
+    }
+  }
+
+  ul {
+    width: 517px;
+    height: 58px;
+
+    float: left;
+    li {
+      float: left;
+      border-right: 1px solid @hover;
+      width: 85px;
+      height: 58px;
+      a {
+        font: 14px/58px Microsoft YaHei;
+        color: #87859B;
+        width: 85px;
+        height: 58px;
+
+        &:hover {
+          color: white;
+
+        }
+      }
+
+    }
+    li:first-child {
+
+      background-color: @hover;
+      color: white;
+      a {
+        color: white;
+      }
+
+    }
+
+  }
+
+  .jrwm {
+    float: left;
+    margin-left: 9px;
+    margin-top: 12px;
+    width: 100px;
+    height: 34px;
+    background-color: #38B774;
+    color: white;
+    font: 14px/34px "Microsoft YaHei";
+    border-radius: 5px;
+    &:hover {
+      background-color: #28a764;
+    }
+
+  }
+  .language {
+    float: right;
+    width: 62px;
+    p {
+      float: left;
+      font-size: 14px;
+      line-height: 58px;
+      color: #38B774;
+    }
+    span {
+      float: right;
+      a {
+        line-height: 58px;
+        color: #87859B;
+        &:hover {
+          color: #38B774;
+        }
+      }
+    }
+  }
+}
+
+//banner 组件
+#banner {
+  img {
+    height: 460px;
+    width: 100%;
+  }
+}
+
+// 小圆点 组件
+#round {
+  span {
+    float: left;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+  }
+}
+
+//视屏播放组件
+#Video {
+
+  a {
+    width: 218px;
+    height: 200px;
+    &:hover {
+      opacity: .9;
+      background-color: @green;
+      h5 {
+        color: white;
+        font-weight: normal;
+      }
+      p {
+        color: white;
+        span {
+          border-left: 5px solid white;
+        }
+      }
+    }
+  }
+  img {
+    width: 218px;
+    height: 128px;
+  }
+  h5 {
+    color: #444866;
+    font-weight: bold;
+    padding: 9px 0;
+  }
+  p {
+
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: @green;
+
+    span {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      line-height: 30px;
+      border: 5px solid transparent;
+      border-left: 5px solid @green;
+      margin-left: 5px;
+
+    }
+  }
+}
+//页脚部分组件
+#Footer{
+  width: 100%;
+  height: 190px;
+  background-color: @colro;
+  padding-top:40px;
+
+ul{
+  margin-top: 10px;
+  li{
+    font-size: 12px;
+    color: #6A6B7D;
+    float: left;
+    a{
+      padding:0 9px;
+      color: #6A6B7D;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+  p{
+    font-style: 12px;
+    line-height: 40px;
+    margin-top: 30px;
+    color: #6A6B7D;
+    a{
+      color: #6A6B7D;
+      padding-left:11px;
+      &:hover{
+        color: white;
+      }
+    }
+  }
+}
+#Top{
+  position: fixed;
+  top: 560px;
+  right: 20px;
+a{
+  width: 64px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #C5D7E3;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
+
+
+  span{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom: 4px solid #fff;
+    margin-right: 6px;
+    margin-bottom: 4px;
+
+  }
+  &:hover{
+    background-color: @green;
+
+  }
+
+}
+
+}
+
+
+
+//================以上组件部分==============
+
+// 网页样式
+body {
+  position: relative;
+  background-color: #F8F8F8;
+}
+
+#rounds {
+  position: absolute;
+  top: 485px;
+  left: 50%;
+  margin-left: -68px;
+  ul {
+    width: 135px;
+    height: 12px;
+
+  }
+  li {
+    margin-left: 15px;
+    float: left;
+  }
+}
+
+#videos {
+  margin-top: 50px;
+  margin-bottom: 52px;
+  position: relative;
+  ul {
+    height: 229px;
+    border-bottom: 1px solid #DEDFE3;
+    li {
+      float: left;
+      margin-right: 43px;
+    }
+    li:last-child {
+      margin-right: 0px;
+      margin-left: -1px;
+    }
+  }
+  .v-rounds {
+    height: 12px;
+    width: 66px;
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    margin-left: -33px;
+    background-color: white;
+    border: none;
+    li {
+      margin-left: 14px;
+      margin-right: 14px;
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+#notify {
+  height: 310px;
+  position: relative;
+  margin-bottom: 57px;
+  .news {
+    float: left;
+    width: 500px;
+    .ntitle {
+      height: 80px;
+      padding-top: 30px;
+      padding-left: 20px;
+      img {
+        margin-right:10px;
+        float: left;
+      }
+      h2{
+        float: left;
+        color: #3F3F63;
+      }
+      p{
+        position: absolute;
+        left: 78px;
+        top: 62px;
+        font-size: 12px;
+        color: #B4B8C1;
+      }
+      .N-more{
+        width: 64px;
+        height: 26px;
+        border:1px solid @green;
+        border-radius: 5px;
+        margin-left: 15px;
+        color: @green;
+        font-size: 12px;
+        line-height: 26px;
+        margin-top:14px;
+      &:hover{
+        background-color: @green;
+        color: white;
+        font-size: 12px;
+      }
+      }
+      .new-bg{
+        width: 500px;
+        height: 110px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+      }
+    }
+
+    .newsList{
+      width: 500px;
+      background-color: #fff;
+      ul{
+        padding: 0px 20px ;
+
+        li{
+          line-height: 50px;
+          height: 49px;
+          border-bottom: 1px solid #DEDFE3;
+          a{
+
+            float: left;
+            width: 400px;
+            text-align: left;
+            font-size: 14px;
+            color: #464177;
+            &:hover{
+              color: @green;
+
+          }
+
+          }
+          span{
+            float: right;
+            font-size: 12px;
+            color: #C4C1CC;
+          }
+        }
+      }
+    }
+
+  }
+  #jobs {
+    float: left;
+    height: 310px;
+    width: 500px;
+    background-color: @green;
+    position: relative;
+    .ntitle {
+      height: 80px;
+      padding-top: 30px;
+      padding-left: 20px;
+      img {
+        margin-right:10px;
+        float: left;
+      }
+      h2{
+        float: left;
+        color: #fff;
+      }
+      p{
+        position: absolute;
+        left: 78px;
+        top: 62px;
+        font-size: 12px;
+        color: white;
+      }
+      .N-more{
+        width: 64px;
+        height: 26px;
+        border:1px solid white;
+        border-radius: 5px;
+        margin-left: 15px;
+        color: white;
+        font-size: 12px;
+        line-height: 26px;
+        margin-top:14px;
+        background-color: @green;
+        &:hover{
+          background-color: white;
+          color: @green;
+          font-size: 12px;
+        }
+      }
+
+    }
+    .person {
+      width: 135px;
+      height: 300px;
+      position: absolute;
+      right: 25px;
+      top: 10px;
+    }
+  .jobList{
+    padding-left:20px;
+
+    h4{
+      color: white;
+      line-height:20px;
+    }
+    li{
+      line-height:38px;
+      width: 308px;
+      border-bottom:1px solid #73DCA1;
+      a{
+        width: 308px;
+        text-align: left;
+        color: white;
+        font-size: 14px;
+      }
+    }
+  }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
