@@ -9,6 +9,8 @@ npm install
 ```
 npm run server
 ```
+# 图片
+![Image text](images/index.jpg)
 
 
 
