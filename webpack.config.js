@@ -5,7 +5,8 @@ module.exports = {
     entry: "./app/main.js",  
     output: {
         path: path.resolve(__dirname, "dist"),
-        filename: "all.js"
+        filename: "all.js",
+	publicPath:"public"
     },
     module: {
 		rules: [
@@ -28,10 +29,6 @@ module.exports = {
 
           })
       }
-      // {
-      //   test: /\.css/,
-      //   loader: ExtractTextPlugin.extract("style-loader", "css-loader",{publicPath: './'})
-      // }
 		]
   },
   plugins: [
