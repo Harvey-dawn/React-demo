@@ -4,7 +4,7 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "server": "webpack-dev-server --content-base ./ --port 8080"
+    "server": "webpack-dev-server --content-base ./ --port 3000"
   },
   "keywords": [
     "react"

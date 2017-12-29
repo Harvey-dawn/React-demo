@@ -1,14 +1,15 @@
 # React练习
-基于webpack，用React、ES6、less模仿博雅游戏的首页
+用React，来模仿博雅游戏的首页做的静态页面。
 # 使用方法
 安装依赖：
 ```
 npm install
 ```
-运行webpack
+运行项目
 ```
 npm run server
 ```
+将自动在3000端口打开
 # 图片
 ![Image text](images/index.jpg)
 
