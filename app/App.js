@@ -5,8 +5,22 @@ import  Top from "./component/top/Top";
 import Round from "./component/round/Round";
 import Video from "./component/video/Video";
 import Footer from "./component/footer/Footer"
+import { setInterval } from "timers";
 
 class App extends Component {
+
+
+
+
+
+    componentDidMount(){
+        var num = 1;
+		setInterval(function(){
+            console.log(num++);
+
+        },1000)
+	}
+
 
 
     render() {

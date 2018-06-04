@@ -3,6 +3,10 @@ import React, {Component} from "react";
 class Head extends Component {
 
 
+    tip (){
+        alert("哈哈 成功了");
+    }
+
     render() {
         return (
             <div id="head">
@@ -18,7 +22,7 @@ class Head extends Component {
                         <li><a href="#">客服中心</a></li>
                         <li><a href="#">投资者关系</a></li>
                     </ul>
-                    <a href="#" className="jrwm">加入我们</a>
+                    <a href="#" className="jrwm" onClick={this.tip}>加入我们</a>
                     <div className="language">
                         <p>中文</p>
                         <span><a href="#">EN</a></span>

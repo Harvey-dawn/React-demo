@@ -33,7 +33,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("style.css"),
-      new OpenBrowserPlugin({ url: 'http://localhost:3000' })
+      new OpenBrowserPlugin({ url: 'http://localhost:4000' })
   ],
 	watch : true
 }
